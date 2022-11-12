@@ -1,0 +1,165 @@
+:root {
+    --main-white: #FFFFFF;
+    --second-gray: #C0C0C0;
+    --buttom-blue: #167BF7;
+    --background-color: #00030c;
+
+    --font-main: 'inter';
+
+    --blue-button-effect: #72aef8;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-white);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__button {
+    background-color: var(--buttom-blue);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--main-white);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.button_secondary {
+    background-color: transparent;
+    border: 2px solid var(--main-white);
+}
+
+.container__warning {
+    font-size: 12px;
+    color: var(--second-gray);
+}
+
+.container__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__img {
+    margin: 1em 0 2em;
+}
+
+.container__box {
+    margin: 0 6em;
+}
+
+.secondary__img {
+    width: 80%;
+}
+
+.secondary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.description__title {
+    font-weight: 700;
+    font-size: 47px;
+    color: var(--main-white);
+    margin-bottom: 0.3em;
+}
+
+.description__text {
+    color: var(--main-white);
+}
+
+.secondary__button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__description {
+    padding: 2em;
+}
+
+.list__device {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.devices {
+    text-align: center;
+}
+
+.devices__title {
+    font-size: 48px;
+    color: var(--main-white);
+}
+
+.item__list {
+    font-size: 32px;
+    color: var(--main-white);
+}
+
+.footer {
+    font-family: var(--font-main);
+    text-align: center;
+    margin: 2em 1em;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.link_list a {
+    margin: 0.5em;
+    color: var(--main-white);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.link_list a:hover {
+    color: var(--buttom-blue);
+}
+
+.link_list a:active {
+    color: yellow;
+}
+
+.img {
+    margin-bottom: 2.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer_text {
+    margin: 10px;
+}
+
+.container__button:hover {
+    background-color: var(--blue-button-effect);
+    color: var(--background-color);
+}
+
